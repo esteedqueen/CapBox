@@ -7,3 +7,12 @@
 meteor-platform
 autopublish
 insecure
+twbs:bootstrap
+fortawesome:fontawesome
+accounts-base
+accounts-password
+iron:router
+aldeed:collection2
+aldeed:autoform
+accounts-ui
+joshowens:accounts-entry
