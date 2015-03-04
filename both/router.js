@@ -18,4 +18,9 @@ Router.route('/dashboard', {
 Router.route('/teamprofile', {
 	name: 'profile'
 });
+
+Router.route('/aboutus', {
+	name: 'aboutus'
+});
+
 });

@@ -44,16 +44,15 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="{{pathFor 'home'}}">Home</a></li>
-                        <li><a href="about-us.html">Aim</a></li>
-                        <li><a href="services.html">Who Built It</a></li>
+                        <li><a href="{{pathFor 'aboutus'}}">About</a></li>
                         <li class="buttons"><button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             {{#if currentUser}}
-                            <p>Welcome. Go to <a href="{{pathFor 'dashboard'}}">Dashboard</a></p>
+                            <p>Welcome. user.email <span><a href="{{pathFor 'entrySignOut'}}">Logout</a></span></p>
                             {{else}}
                             {{>accountButtons}}
                             {{/if}}
                         </button></li>
-
+ 
                     </ul>
                 </div>
             </div><!--/.container-->
