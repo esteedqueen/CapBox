@@ -67,8 +67,8 @@ jQuery(function($) {'use strict',
 		}, 500);
 	});	
 
-	//Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
+	// //Pretty Photo
+	// $("a[rel^='prettyPhoto']").prettyPhoto({
+	// 	social_tools: false
+	// });	
 });

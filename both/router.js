@@ -5,14 +5,16 @@ Router.configure({
 Router.map(function(){
 this.route('home',{path:'/'});
 
-this.route('capstoneprojects', function(){
-		this.render('capstoneprojects')
-	}, {
-		name:'capstoneprojects'
-	});
+Router.route('/capstone_projects', {
+	name: 'capstoneProjects',
+	onBeforeAction: function () {
+      AccountsEntry.signInRequired(this);
+    }
+});
 
-Router.route('/dashboard', {
-	name: 'dashboard'
+
+Router.route('/new_capstone_project', {
+	name: 'projectForm'
 });
 
 Router.route('/project_profile', {
@@ -24,3 +26,4 @@ Router.route('/aboutus', {
 });
 
 });
+

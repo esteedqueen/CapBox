@@ -7,7 +7,7 @@ if (Meteor.isClient) {
   Meteor.startup(function() {
   	AccountsEntry.config({
   		homeRoute: '/',
-  		dashboardRoute: '/dashboard'
+  		dashboardRoute: '/capstone_projects'
 
   	});
   	});
