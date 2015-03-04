@@ -11,13 +11,16 @@ this.route('loggedIn', function(){
 		name:'loggedIn'
 	});
 
-Router.route('/dashboard', {
-	name: 'dashboard'
+Router.route('/capstone_projects', {
+	name: 'capstoneProjects',
+	onBeforeAction: function () {
+      AccountsEntry.signInRequired(this);
+    }
 });
 
 
 Router.route('/new_capstone_idea', {
-	name: 'ideaForm'
+	name: 'projectsForm'
 });
 
 Router.route('/teamprofile', {

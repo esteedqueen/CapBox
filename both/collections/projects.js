@@ -1,9 +1,9 @@
-Ideas = new Mongo.Collection('ideas');
+Projects = new Mongo.Collection('projects');
 
-Ideas.attachSchema(new SimpleSchema({
-	ideaname: {
+Projects.attachSchema(new SimpleSchema({
+	projectname: {
 		type: String,
-		label: "Idea Name",
+		label: "Project Name",
 		max: 200
 	},
 
