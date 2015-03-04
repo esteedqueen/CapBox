@@ -5,7 +5,7 @@ Router.configure({
 Router.map(function(){
 this.route('home',{path:'/'});
 
-Router.route('/capstone_projects', {
+this.route('/capstone_projects', {
 	name: 'capstoneProjects',
 	onBeforeAction: function () {
       AccountsEntry.signInRequired(this);
@@ -13,15 +13,15 @@ Router.route('/capstone_projects', {
 });
 
 
-Router.route('/new_capstone_project', {
+this.route('/new_capstone_project', {
 	name: 'projectForm'
 });
 
-Router.route('/project_profile', {
+this.route('/project_profile', {
 	name: 'profile'
 });
 
-Router.route('/aboutus', {
+this.route('/aboutus', {
 	name: 'aboutus'
 });
 
