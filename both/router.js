@@ -14,4 +14,8 @@ this.route('loggedIn', function(){
 Router.route('/dashboard', {
 	name: 'dashboard'
 });
+
+Router.route('/teamprofile', {
+	name: 'profile'
+});
 });
