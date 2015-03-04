@@ -42,7 +42,46 @@ body {
 .logo{
   height: 200px;
   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
 }
+
+.profile-head{
+  padding-top: 25px;
+}
+
+.project-title{
+  margin-bottom: -50px;
+}
+
+.description{
+  border-bottom: 2px solid #999999;
+}
+
+.resources{
+  border-bottom: 2px solid #999999;
+}
+
+.team{
+  margin-top: 80px;
+}
+
+.resource-content{
+  
+}
+
+.youtube{
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #666666;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 60px;
+}
+
+
 
 h1,
 h2,
