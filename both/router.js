@@ -19,8 +19,8 @@ Router.route('/capstone_projects', {
 });
 
 
-Router.route('/new_capstone_idea', {
-	name: 'projectsForm'
+Router.route('/new_capstone_project', {
+	name: 'projectForm'
 });
 
 Router.route('/teamprofile', {

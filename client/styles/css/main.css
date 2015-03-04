@@ -94,7 +94,7 @@ h6 {
   color:#4e4e4e;
 }
 
-h1{
+.slide-margin h1{
   font-size: 36px;
   color:#fff;
 }
@@ -123,7 +123,15 @@ a {
 }
 
 a:hover, a:focus {
-  color: #d43133;
+  color: #c52d2f;
+}
+
+button a {
+  color: #ffffff;
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
 }
 
 hr {
