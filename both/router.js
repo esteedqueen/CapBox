@@ -5,17 +5,17 @@ Router.configure({
 Router.map(function(){
 this.route('home',{path:'/'});
 
-this.route('loggedIn', function(){
-		this.render('loggedIn')
+this.route('capstoneprojects', function(){
+		this.render('capstoneprojects')
 	}, {
-		name:'loggedIn'
+		name:'capstoneprojects'
 	});
 
 Router.route('/dashboard', {
 	name: 'dashboard'
 });
 
-Router.route('/teamprofile', {
+Router.route('/project_profile', {
 	name: 'profile'
 });
 
