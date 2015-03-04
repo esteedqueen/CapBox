@@ -1,0 +1,42 @@
+<template name="loggedIn">
+  <div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-4">
+                <div class="dropdown col-lg-4">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      Search Capstone by year
+                      <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2016</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2015</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2014</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="search col-sm-3">
+            <form role="form">
+                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </form>
+        </div>
+        <div >
+           <div class="social">
+               <div class="upload btn-group" role="group" aria-label="...">
+                   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    UPLOAD | <span><a href="{{pathFor 'entrySignOut'}}">Logout</a></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--/.top-bar-->
+<div>
+    {{>projects}}
+</div>
+</template>
