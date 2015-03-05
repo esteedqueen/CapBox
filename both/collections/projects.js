@@ -11,12 +11,12 @@ Projects.attachSchema(new SimpleSchema({
  //    type: String,
  //    autoform: {
  //      afFieldInput: {
- //        type: 'fileUpload',
+ //        type: 'cfs-file',
  //        collection: 'Images'
  //      }
  //    },
  //    label: 'Upload Project Logo'
- //  },
+ //  }
 
 	problemstatement: {
 		type: String,

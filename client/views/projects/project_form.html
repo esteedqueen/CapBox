@@ -3,6 +3,17 @@
 		<div class="container">
 		<h1 class="text-center">Submit your capstone projects here.</h1>
 			{{> quickForm id="addProject" collection="Projects" type="insert"}}
+
+			<!-- {{#autoForm id="addProject" type="insert" collection="Projects"}}
+			  {{> afQuickField name="projectname"}}
+			  {{> afQuickField name="projectlogo" type="cfs-file" collection="images"}}
+			  <button type="submit">Submit</button>
+			{{/autoForm}} -->
+			<!-- <p>Upload Project Logo
+			<span class="btn btn-default btn-file">
+			<input multiple class="file fileInput" type="file">
+			</span>
+			</p> -->
 			
 		</div>
 	</div>

@@ -17,3 +17,6 @@ aldeed:autoform
 accounts-ui
 joshowens:accounts-entry
 email
+cfs:standard-packages
+cfs:filesystem
+cfs:autoform
