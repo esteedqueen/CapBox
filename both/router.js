@@ -5,23 +5,31 @@ Router.configure({
 Router.map(function(){
 this.route('home',{path:'/'});
 
-Router.route('/capstone_projects', {
+this.route('/capstone_projects', {
 	name: 'capstoneProjects',
 	onBeforeAction: function () {
       AccountsEntry.signInRequired(this);
-    }
+    },
+    data: function () {
+		return {                        // objects to be rendered in tempate e.g. {{pageTitle}}
+  		projects: Projects.find().fetch()
+  	}
+	}
 });
 
 
-Router.route('/new_capstone_project', {
+this.route('/new_capstone_project', {
 	name: 'projectForm'
 });
 
-Router.route('/project_profile', {
-	name: 'profile'
+this.route('/project_profile/:_id', {
+	name: 'projectProfile',
+	data: function () {
+		return Projects.findOne(this.params._id); 
+	}
 });
 
-Router.route('/aboutus', {
+this.route('/aboutus', {
 	name: 'aboutus'
 });
 
