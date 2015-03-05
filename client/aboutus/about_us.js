@@ -1,3 +1,3 @@
-Template.profile.rendered = function() {
+Template.aboutus.rendered = function() {
   new WOW().init();
 }
