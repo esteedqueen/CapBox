@@ -7,16 +7,16 @@ Projects.attachSchema(new SimpleSchema({
 		max: 200
 	},
 
-	// projectlogo: {
- //    type: String,
- //    autoform: {
- //      afFieldInput: {
- //        type: 'cfs-file',
- //        collection: 'Images'
- //      }
- //    },
- //    label: 'Upload Project Logo'
- //  }
+	projectlogo: {
+    type: String,
+    autoform: {
+      afFieldInput: {
+        type: 'fileUpload',
+        collection: 'Images'
+      }
+    },
+    label: 'Upload Project Logo'
+  },
 
 	problemstatement: {
 		type: String,
@@ -59,16 +59,16 @@ Projects.attachSchema(new SimpleSchema({
 		label: "Team Members"
 	},
 
-	// teampicture: {
- //    type: String,
- //    autoform: {
- //      afFieldInput: {
- //        type: 'fileUpload',
- //        collection: 'Images'
- //      }
- //    },
- //    label: 'Upload Team Picture'
- //  },
+	teampicture: {
+    type: String,
+    autoform: {
+      afFieldInput: {
+        type: 'fileUpload',
+        collection: 'Images'
+      }
+    },
+    label: 'Upload Team Picture'
+  },
 
 	batchyear: {
 		type: String,
