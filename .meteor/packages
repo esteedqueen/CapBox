@@ -17,6 +17,8 @@ accounts-ui
 joshowens:accounts-entry
 email
 cfs:standard-packages
-cfs:filesystem
 cfs:autoform
 twbs:bootstrap
+cfs:gridfs@=0.0.27
+yogiben:autoform-file
+cfs:ui

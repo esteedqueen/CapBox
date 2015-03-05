@@ -11,15 +11,6 @@
 							<li data-target="#carousel-slider" data-slide-to="1"></li>
 							<li data-target="#carousel-slider" data-slide-to="2"></li>
 						</ol> -->
-
-						<div class="carousel-inner">
-							<div class="item active">
-							<!-- {{#with FS.GetFile 'images' teampicture}} -->
-								<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-							<!-- {{/with}} -->
-							</div>
-							
-						</div>
 						
 						<!-- <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
 							<i class="fa fa-angle-left"></i> 
@@ -31,15 +22,18 @@
 					</div> <!--/#carousel-slider-->
 				</div><!--/#about-slider-->
 				<div class=" profile-head">
-					<div class="project-title center wow fadeInDown">
+					<div class="project-title center wow fadeInDown" style="float:right">
 
-						<h2>{{projectname}}</h2>
-						<p class="lead">EIT Batch:{{batchyear}}<br> </p>
+						<h2>Project Name: {{projectname}}</h2>
+						<p class="lead">Batch: {{batchyear}} EITs<br> </p>
 					</div>
 
 
 					<div class=" wow fadeInUpBig">
-						<div class="logo img thumbnail media-object">
+						<div class="logo media-object">
+							{{#with FS.GetFile 'images' projectlogo}}
+								<img src="{{url}}" class="img-responsive" alt=""> 
+							{{/with}}
 						</div>
 					</div>
 
@@ -99,57 +93,24 @@
 			-->
 		</div><!--/.our-skill-->
 
-		<div class="resources">
-			<div class="resource-content">
-				<div class="resource-inner">
-					<div class=" center wow fadeInDown" style="visibility: visible;">
-						<h2>Resources and Documents</h2>
-						<p class="lead">Access related project documents</p>
-					</div>
-
-					<div class="row resource-content">
-						<div class="features">
-							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
-								<div class="feature-wrap">
-									<i class="fa fa-bullhorn"></i>
-									<h2>Market Findings</h2>
-									<h3>Findings on market research and analysis</h3>
-								</div>
-							</div><!--/.col-md-4-->
-
-							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
-								<div class="feature-wrap">
-									<i class="fa fa-cogs"></i>
-									<h2>How it works</h2>
-									<h3>An overview of how the product or the company works</h3>
-								</div>
-							</div><!--/.col-md-4-->
-
-							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
-								<div class="feature-wrap">
-									<i class="fa fa-code"></i>
-									<h2>Code</h2>
-									<h3>Code and technology used</h3>
-								</div>
-							</div><!--/.col-md-4-->
-
-						</div><!--/.services-->
-
-					</div>
-					<div class="youtube wow zoomIn">
-
-					</div>
-				</div>
-			</div>
-		</div>
+		
 
 		<!-- our-team -->
 		<div class="team">
 			<div class="center wow fadeInDown">
 				<h2>The team</h2>
+				<p><span style="font-style:bold;">Team Members:</span> {{teammembers}}</p>
+				<div class="carousel-inner">
+							<div class="item active">
+							{{#with FS.GetFile 'images' teampicture}}
+								<img src="{{url}}" class="img-responsive" alt=""> 
+							{{/with}}
+							</div>
+							
+				</div>
 
 			</div>
-
+			<!--
 			<div class="row clearfix">
 				<div class="col-md-4 col-sm-6">	
 					<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -173,12 +134,12 @@
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								</ul>
 							</div>
-						</div><!--/.media -->
+						</div>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 					</div>
-				</div><!--/.col-lg-4 -->
+				</div><!.col-lg-4 -->
 
-
+				<!--
 				<div class="col-md-4 col-sm-6 col-md-offset-2">	
 					<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 						<div class="media">
@@ -200,11 +161,12 @@
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								</ul>
 							</div>
-						</div><!--/.media -->
+						</div>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 					</div>
-				</div><!--/.col-lg-4 -->					
-			</div> <!--/.row -->
+				</div>				
+			</div>  -->
+			<!--
 			<div class="row team-bar">
 				<div class="first-one-arrow hidden-xs">
 					<hr>
@@ -221,7 +183,7 @@
 				<div class="fourth-arrow hidden-xs">
 					<hr> <i class="fa fa-angle-down"></i>
 				</div>
-			</div> <!--skill_border-->       
+			</div>       
 
 			<div class="row clearfix">   
 				<div class="col-md-4 col-sm-6 col-md-offset-2">	
@@ -246,7 +208,7 @@
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								</ul>
 							</div>
-						</div><!--/.media -->
+						</div>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 					</div>
 				</div>
@@ -271,12 +233,56 @@
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								</ul>
 							</div>
-						</div><!--/.media -->
+						</div>>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 					</div>
 				</div>
-			</div>	<!--/.row-->
+			</div>	-->
 		</div><!--section-->
+
+		<div class="resources">
+			<div class="resource-content">
+				<div class="resource-inner">
+					<div class=" center wow fadeInDown" style="visibility: visible;">
+						<h2>Resources and Documents</h2>
+						<p class="lead">Access related project documents</p>
+					</div>
+
+					<div class="row resource-content">
+						<div class="features">
+							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
+								<div class="feature-wrap">
+									<i class="fa fa-bullhorn"></i>
+									<h2>Market Findings</h2>
+									<h3>Findings on market research and analysis</h3>
+								</div>
+							</div><!--/.col-md-4-->
+
+							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
+								<div class="feature-wrap">
+									<i class="fa fa-cogs"></i>
+									<h2>Pitch Video + Demo</h2>
+									<h3>An overview of how the product or the company works</h3>
+								</div>
+							</div><!--/.col-md-4-->
+
+							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
+								<div class="feature-wrap">
+									<i class="fa fa-code"></i>
+									<h2>Code</h2>
+									<h3>Code and technology used</h3>
+								</div>
+							</div><!--/.col-md-4-->
+
+						</div><!--/.services-->
+
+					</div>
+					<!-- <div class="youtube wow zoomIn">
+
+					</div> -->
+				</div>
+			</div>
+		</div>
 	</div><!--/.container-->
 
 </section><!--/about-us-->

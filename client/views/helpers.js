@@ -2,26 +2,20 @@
 //   return Meteor.user();
 // });
 // Template.projectForm.events({
-//   'change .fileInput': function(event, template) {
-//     event.preventDefault();
+//   'change input': function(event, template) {
 //     FS.Utility.eachFile(event, function(file) {
-//     	// var fileObj = new FS.File(file);
-//     	Images.insert(file, function (err, fileObj) {
-//     		//inserted new do with ID fileObj._id and kicked off the data upload using HTTP
-//     		// console.log(err);
+//     	Images.insert(new FS.File(file), function (err) {
+//     		console.log(err)
 //     	});
 //     });
 //   }
 // });
 
-// Template.projects.helpers({
-// 	images:function () {
-// 		return Images.find();
-// 	}
-// 	// images: function() {
-// 	// 	return Images.findOne({project: this._id});
-// 	// }
-// });
+Template.projects.helpers({
+	'images':function () {
+		return Images.find().fetch();
+	}
+});
 
 UI.registerHelper('summarizeDesc', function(solutionStatement, maxChar){
 	if (solutionStatement.length > maxChar) {
