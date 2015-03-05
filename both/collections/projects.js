@@ -7,33 +7,16 @@ Projects.attachSchema(new SimpleSchema({
 		max: 200
 	},
 
-	teamname: {
-		type: String,
-		label: "Team Name",
-		max: 200
-	},
-
-	teammembers: {
-		type: String,
-		label: "Team Members"
-	},
-
-	batchyear: {
-		type: String,
-		label: "EIT Batch Year",
-		autoform: {
-			options: [{
-				label: "2016",
-				value: "2016"
-			}, {
-				label: "2015",
-				value: "2015"
-			}, {
-				label: "2014",
-				value: "2014"
-			}]
-		}
-	},
+	// projectlogo: {
+ //    type: String,
+ //    autoform: {
+ //      afFieldInput: {
+ //        type: 'fileUpload',
+ //        collection: 'Images'
+ //      }
+ //    },
+ //    label: 'Upload Project Logo'
+ //  },
 
 	problemstatement: {
 		type: String,
@@ -69,7 +52,52 @@ Projects.attachSchema(new SimpleSchema({
 	marketresearch: {
 		type: String,
 		label: "Market research resources gathered."
-	}
+	},
+
+	teammembers: {
+		type: String,
+		label: "Team Members"
+	},
+
+	// teampicture: {
+ //    type: String,
+ //    autoform: {
+ //      afFieldInput: {
+ //        type: 'fileUpload',
+ //        collection: 'Images'
+ //      }
+ //    },
+ //    label: 'Upload Team Picture'
+ //  },
+
+	batchyear: {
+		type: String,
+		label: "EIT Batch Year",
+		autoform: {
+			options: [{
+				label: "2016",
+				value: "2016"
+			}, {
+				label: "2015",
+				value: "2015"
+			}, {
+				label: "2014",
+				value: "2014"
+			}]
+		}
+	},
+
+	// owner: {
+ //        type: String,
+ //        autoform: {
+ //            omit: true
+ //        },
+ //        autoValue: function(){
+ //            if (this.isInsert){
+ //                return Meteor.userId();
+ //            }
+ //        }
+ //    }
 
 	//category or tag
 
