@@ -99,9 +99,9 @@
 		<div class="team">
 			<div class="center wow fadeInDown">
 				<h2>The team</h2>
-				<p><span style="font-style:bold;">Team Members:</span> {{teammembers}}</p>
+				<p>This idea was pitched by {{teammembers}}</p>
 				<div class="carousel-inner">
-							<div class="item active">
+							<div class="item active container">
 							{{#with FS.GetFile 'images' teampicture}}
 								<img src="{{url}}" class="img-responsive" alt=""> 
 							{{/with}}
@@ -253,24 +253,25 @@
 							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
 								<div class="feature-wrap">
 									<i class="fa fa-bullhorn"></i>
-									<h2>Market Findings</h2>
-									<h3>Findings on market research and analysis</h3>
+									<h2><a href="{{pitchdeck}}">View Pitch Deck</a></h2>
+									<h3>An overview of how the product works</h3>
 								</div>
 							</div><!--/.col-md-4-->
 
 							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
 								<div class="feature-wrap">
 									<i class="fa fa-cogs"></i>
-									<h2>Pitch Video + Demo</h2>
-									<h3>An overview of how the product or the company works</h3>
+									<h2><a href="{{marketresearch}}">View Market Findings</a></h2>
+									<h3>Findings on market research and analysis</h3>
+									
 								</div>
 							</div><!--/.col-md-4-->
 
 							<div class="col-md-4 col-sm-6 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; -webkit-animation-duration: 1000ms; -webkit-animation-delay: 600ms;">
 								<div class="feature-wrap">
 									<i class="fa fa-code"></i>
-									<h2>Code</h2>
-									<h3>Code and technology used</h3>
+									<h2><a href="{{pitchvideo}}">Pitch Video</a></h2>
+									<h3>Guest Lecture Pitch Video + Feedback</h3>
 								</div>
 							</div><!--/.col-md-4-->
 
